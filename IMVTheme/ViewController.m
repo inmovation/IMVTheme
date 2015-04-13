@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "IMVThemeManager.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
 
 @end
 
@@ -17,11 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    _imgView.image = [UIImage imageForName:@"default_user"];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
 }
 
 @end

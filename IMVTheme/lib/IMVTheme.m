@@ -73,18 +73,23 @@
 {
     NSString *imgPath = nil;
     if (self.type == themeTypeBundle) {
-        NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:name ofType:@"bundle"]];
-        imgPath = [bundle pathForResource:@"" ofType:@"png"];
+        NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:self.name ofType:@"bundle"]];
+        // 必须保证有2x图片
+        imgPath = [bundle pathForResource:[NSString stringWithFormat:@"%@@2x", name] ofType:@"png"];
     }
 
+//    return [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", self.name, name]];
+    
+    imgPath = [imgPath stringByDeletingPathExtension];
     return [UIImage imageWithContentsOfFile:imgPath];
+
 }
 
 - (UIColor *)colorForName:(NSString *)name
 {
     IMVStyle *style = [self.styles objectForKey:name];
     if (!style) {
-        NSLog(@"the color named:%@ not in the theme:%@, or not kind of color", name, self.name);
+        NSLog(@"the color named:%@ not in the theme:%@", name, self.name);
         return nil;
     }
     return style.colorValue;
@@ -94,7 +99,7 @@
 {
     IMVStyle *style = [self.styles objectForKey:name];
     if (!style) {
-        NSLog(@"the font named:%@ not in the theme:%@, or not kind of font", name, self.name);
+        NSLog(@"the font named:%@ not in the theme:%@", name, self.name);
         return nil;
     }
     return style.fontValue;

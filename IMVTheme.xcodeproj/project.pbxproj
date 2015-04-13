@@ -20,6 +20,7 @@
 		AD9A8D5E1ADB54CD003B49B9 /* UIColor+IMVTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9A8D561ADB54CD003B49B9 /* UIColor+IMVTheme.m */; };
 		AD9A8D5F1ADB54CD003B49B9 /* UIFont+IMVTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9A8D581ADB54CD003B49B9 /* UIFont+IMVTheme.m */; };
 		AD9A8D601ADB54CD003B49B9 /* UIImage+IMVTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9A8D5A1ADB54CD003B49B9 /* UIImage+IMVTheme.m */; };
+		ADBE1A9E1ADB61FD0055CA36 /* ThemeDefault.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADBE1A9D1ADB61FD0055CA36 /* ThemeDefault.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		AD9A8D581ADB54CD003B49B9 /* UIFont+IMVTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+IMVTheme.m"; sourceTree = "<group>"; };
 		AD9A8D591ADB54CD003B49B9 /* UIImage+IMVTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IMVTheme.h"; sourceTree = "<group>"; };
 		AD9A8D5A1ADB54CD003B49B9 /* UIImage+IMVTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IMVTheme.m"; sourceTree = "<group>"; };
+		ADBE1A9D1ADB61FD0055CA36 /* ThemeDefault.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ThemeDefault.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				AD9A8D2D1ADB5081003B49B9 /* AppDelegate.m */,
 				AD9A8D2F1ADB5081003B49B9 /* ViewController.h */,
 				AD9A8D301ADB5081003B49B9 /* ViewController.m */,
+				ADBE1A9D1ADB61FD0055CA36 /* ThemeDefault.bundle */,
 				AD9A8D321ADB5081003B49B9 /* Main.storyboard */,
 				AD9A8D351ADB5081003B49B9 /* Images.xcassets */,
 				AD9A8D371ADB5081003B49B9 /* LaunchScreen.xib */,
@@ -240,6 +243,7 @@
 				AD9A8D341ADB5081003B49B9 /* Main.storyboard in Resources */,
 				AD9A8D391ADB5081003B49B9 /* LaunchScreen.xib in Resources */,
 				AD9A8D361ADB5081003B49B9 /* Images.xcassets in Resources */,
+				ADBE1A9E1ADB61FD0055CA36 /* ThemeDefault.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

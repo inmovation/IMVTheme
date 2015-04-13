@@ -10,7 +10,8 @@
 
 typedef enum{
     styleTypeFont = 0,
-    styleTypeColor
+    styleTypeColor,
+    styleTypeOther
 }IMVThemeStyleType;
 
 @interface IMVStyle : NSObject

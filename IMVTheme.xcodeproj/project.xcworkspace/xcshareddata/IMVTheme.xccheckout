@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>632B50B3-479B-4D75-9A98-53EC2D58E0EE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IMVTheme</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4335BC56520F7C1052ED4A80AC4783BE017979DD</key>
+		<string>https://github.com/inmovation/IMVTheme.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IMVTheme.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4335BC56520F7C1052ED4A80AC4783BE017979DD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/inmovation/IMVTheme.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4335BC56520F7C1052ED4A80AC4783BE017979DD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4335BC56520F7C1052ED4A80AC4783BE017979DD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IMVTheme</string>
+		</dict>
+	</array>
+</dict>
+</plist>

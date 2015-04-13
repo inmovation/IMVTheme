@@ -8,13 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#define IMVFontNaviBarTitle @"naviBarTitleFont"
-#define IMVFontNaviBarItemTitle @"naviBarItemTitleFont"
-#define IMVFontTabBarItemTitle @"tabBarItemTitleFont"
-
-#define IMVFontTextTitle @"textTitleFont"
-#define IMVFontTextDetail @"textDetailFont"
-
+/**
+ *  推荐使用这些方法来获字体大小
+ */
 @interface UIFont (IMVTheme)
 
 + (UIFont *)fontForName:(NSString *)name;
@@ -22,7 +18,7 @@
 + (UIFont *)fontForNaviBarTitle;
 + (UIFont *)fontForNaviBarItemTitle;
 + (UIFont *)fontForTabBarItemTitle;
-+ (UIFont *)fontForTitle;
-+ (UIFont *)fontForDetail;
++ (UIFont *)fontForTextTitle;
++ (UIFont *)fontForTextDetail;
 
 @end

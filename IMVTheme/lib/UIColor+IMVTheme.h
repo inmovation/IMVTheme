@@ -8,24 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-#define IMVColorNaviBarTint @"naviBarTintColor"
-#define IMVColorNaviBarBarTint @"naviBarBarTintColor"
-#define IMVColorNaviBarTitle @"naviBarTitleColor"
-#define IMVColorNaviBarItemTitle @"naviBarItemTitleColor"
-
-#define IMVColorTabBarTint @"tabBarTintColor"
-#define IMVColorTabBarBarTint @"tabBarBarTintColor"
-#define IMVColorTabBarItemTitleNormal @"tabBarItemTitleNormalColor"
-#define IMVColorTabBarItemTitleSelected @"tabBarItemTitleSelectedColor"
-
-#define IMVColorViewBackground @"viewBackgroundColor"
-#define IMVColorViewContent @"viewContentColor"
-
-#define IMVColorTextTitle @"textTitleColor"
-#define IMVColorTextDetail @"textDetailColor"
-
+/**
+ *  推荐使用这些方法来获取颜色
+ */
 @interface UIColor (IMVTheme)
 
+/**
+ *  根据plist中定义的颜色key获取颜色
+ *
+ *  @param name plist中定义的key
+ *
+ *  @return 颜色
+ */
 + (UIColor *)colorForName:(NSString *)name;
 
 + (UIColor *)colorForNaviBarTint;

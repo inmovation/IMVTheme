@@ -2,19 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>textTitleColor</key>
+	<dict>
+		<key>type</key>
+		<string>1</string>
+		<key>value</key>
+		<string>50,150,50,1</string>
+	</dict>
 	<key>textDetailColor</key>
 	<dict>
 		<key>type</key>
 		<string>1</string>
 		<key>value</key>
 		<string>100,100,100,1</string>
-	</dict>
-	<key>textTitleColor</key>
-	<dict>
-		<key>type</key>
-		<string>1</string>
-		<key>value</key>
-		<string>50,50,50,1</string>
 	</dict>
 	<key>viewBackgroundColor</key>
 	<dict>
@@ -91,7 +91,7 @@
 		<key>type</key>
 		<string>0</string>
 		<key>value</key>
-		<string>16</string>
+		<string>20</string>
 	</dict>
 	<key>tabBarItemTitleFont</key>
 	<dict>

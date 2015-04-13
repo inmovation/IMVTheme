@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#define IMVImageTabBarBackground @"tabBarBackgroundImage"
-#define IMVImageNaviBarBackground @"naviBarBackgroundImage"
-
+/**
+ *  推荐使用这些方法来获取图片
+ */
 @interface UIImage (IMVTheme)
 
 + (UIImage *)imageForName:(NSString *)name;

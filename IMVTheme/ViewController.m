@@ -10,7 +10,10 @@
 #import "IMVThemeManager.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
+- (IBAction)theme1Clicked:(id)sender;
+- (IBAction)theme2Clicked:(id)sender;
 
 @end
 
@@ -20,7 +23,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _imgView.image = [UIImage imageForName:@"default_user"];
+    [self setTheme];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTheme) name:IMVNotificationThemeChanged object:nil];
 
 }
 
@@ -30,4 +34,23 @@
     
 }
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)setTheme
+{
+    _imgView.image = [UIImage imageForName:@"default_user"];
+    _label.font = [UIFont fontForTextTitle];
+    _label.textColor = [UIColor colorForTextTitle];
+}
+- (IBAction)theme1Clicked:(id)sender {
+    
+    [[IMVThemeManager sharedInstence] useTheme:@"ThemeDefault" type:themeTypeBundle];
+}
+
+- (IBAction)theme2Clicked:(id)sender {
+    [[IMVThemeManager sharedInstence] useTheme:@"ThemeDefault2" type:themeTypeBundle];
+}
 @end

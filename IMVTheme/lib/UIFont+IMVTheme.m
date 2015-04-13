@@ -31,12 +31,12 @@
     return [self fontForName:IMVFontTabBarItemTitle];
 }
 
-+ (UIFont *)fontForTitle
++ (UIFont *)fontForTextTitle
 {
     return [self fontForName:IMVFontTextTitle];
 }
 
-+ (UIFont *)fontForDetail
++ (UIFont *)fontForTextDetail
 {
     return [self fontForName:IMVFontTextDetail];
 }

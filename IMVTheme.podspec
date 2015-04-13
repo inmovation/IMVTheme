@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
                    you can switch the theme of your project
                    DESC
 
-  s.homepage     = "https://github/inmovation/IMVTheme"
+  s.homepage     = "https://github.com/inmovation/IMVTheme"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 

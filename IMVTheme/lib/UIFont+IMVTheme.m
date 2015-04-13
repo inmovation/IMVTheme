@@ -33,12 +33,12 @@
 
 + (UIFont *)fontForTitle
 {
-    return [self fontForName:IMVFontTitle];
+    return [self fontForName:IMVFontTextTitle];
 }
 
 + (UIFont *)fontForDetail
 {
-    return [self fontForName:IMVFontDetail];
+    return [self fontForName:IMVFontTextDetail];
 }
 
 @end

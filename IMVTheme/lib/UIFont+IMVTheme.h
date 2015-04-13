@@ -12,8 +12,8 @@
 #define IMVFontNaviBarItemTitle @"naviBarItemTitleFont"
 #define IMVFontTabBarItemTitle @"tabBarItemTitleFont"
 
-#define IMVFontTitle @"titleFont"
-#define IMVFontDetail @"detailFont"
+#define IMVFontTextTitle @"textTitleFont"
+#define IMVFontTextDetail @"textDetailFont"
 
 @interface UIFont (IMVTheme)
 

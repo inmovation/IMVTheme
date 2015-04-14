@@ -34,9 +34,11 @@
 #define IMVColorTextTitle @"textTitleColor"
 #define IMVColorTextDetail @"textDetailColor"
 
-//tab和navi的背景图片，可选
+//必须的图片图片，可选
 #define IMVImageTabBarBackground @"tabBarBackgroundImage"
 #define IMVImageNaviBarBackground @"naviBarBackgroundImage"
+#define IMVImageNetworkBrokenHint @"networkBrokenHintImage"
+#define IMVImageEmptyHint @"emptyHintImage"
 
 #define IMVNotificationThemeChanged @"IMVNotificationThemeChanged"
 

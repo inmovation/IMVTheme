@@ -17,5 +17,7 @@
 
 + (UIImage *)imageForTabBarBackground;
 + (UIImage *)imageForNaviBarBackground;
++ (UIImage *)imageForNetworkBrokenHint;
++ (UIImage *)imageForEmptyHint;
 
 @end

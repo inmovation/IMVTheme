@@ -26,4 +26,14 @@
     return [self imageForName:IMVImageNaviBarBackground];
 }
 
++ (UIImage *)imageForNetworkBrokenHint
+{
+    return [self imageForName:IMVImageNetworkBrokenHint];
+}
+
++ (UIImage *)imageForEmptyHint
+{
+    return [self imageForName:IMVImageEmptyHint];
+}
+
 @end

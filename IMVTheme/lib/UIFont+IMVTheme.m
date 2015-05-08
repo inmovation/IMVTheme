@@ -16,29 +16,4 @@
     return [[IMVThemeManager sharedInstence] fontForName:name];
 }
 
-+ (UIFont *)fontForNaviBarTitle
-{
-    return [self fontForName:IMVFontNaviBarTitle];
-}
-
-+ (UIFont *)fontForNaviBarItemTitle
-{
-    return [self fontForName:IMVFontNaviBarItemTitle];
-}
-
-+ (UIFont *)fontForTabBarItemTitle
-{
-    return [self fontForName:IMVFontTabBarItemTitle];
-}
-
-+ (UIFont *)fontForTextTitle
-{
-    return [self fontForName:IMVFontTextTitle];
-}
-
-+ (UIFont *)fontForTextDetail
-{
-    return [self fontForName:IMVFontTextDetail];
-}
-
 @end

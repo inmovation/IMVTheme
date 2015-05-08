@@ -15,10 +15,4 @@
 
 + (UIFont *)fontForName:(NSString *)name;
 
-+ (UIFont *)fontForNaviBarTitle;
-+ (UIFont *)fontForNaviBarItemTitle;
-+ (UIFont *)fontForTabBarItemTitle;
-+ (UIFont *)fontForTextTitle;
-+ (UIFont *)fontForTextDetail;
-
 @end

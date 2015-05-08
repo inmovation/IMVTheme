@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "IMVThemeManager.h"
+#import "UIImage+IMVTheme.h"
+#import "UIFont+IMVTheme.h"
+#import "UIColor+IMVTheme.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -42,8 +45,8 @@
 - (void)setTheme
 {
     _imgView.image = [UIImage imageForName:@"default_user"];
-    _label.font = [UIFont fontForTextTitle];
-    _label.textColor = [UIColor colorForTextTitle];
+    _label.font = [UIFont fontForName:@"textTitleFont"];
+    _label.textColor = [UIColor colorForName:@"textTitleColor"];
 }
 - (IBAction)theme1Clicked:(id)sender {
     

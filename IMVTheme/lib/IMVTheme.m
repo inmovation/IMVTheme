@@ -80,7 +80,6 @@
 
 //    return [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@", self.name, name]];
     
-    imgPath = [imgPath stringByDeletingPathExtension];
     return [UIImage imageWithContentsOfFile:imgPath];
 
 }

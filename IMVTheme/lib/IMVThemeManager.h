@@ -8,37 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "IMVTheme.h"
-#import "UIImage+IMVTheme.h"
-#import "UIFont+IMVTheme.h"
-#import "UIColor+IMVTheme.h"
-
-//以下几个必须得在theme.plist中定义
-//字体大小
-#define IMVFontNaviBarTitle @"naviBarTitleFont"
-#define IMVFontNaviBarItemTitle @"naviBarItemTitleFont"
-#define IMVFontTabBarItemTitle @"tabBarItemTitleFont"
-#define IMVFontTextTitle @"textTitleFont"
-#define IMVFontTextDetail @"textDetailFont"
-
-//颜色
-#define IMVColorNaviBarTint @"naviBarTintColor"
-#define IMVColorNaviBarBarTint @"naviBarBarTintColor"
-#define IMVColorNaviBarTitle @"naviBarTitleColor"
-#define IMVColorNaviBarItemTitle @"naviBarItemTitleColor"
-#define IMVColorTabBarTint @"tabBarTintColor"
-#define IMVColorTabBarBarTint @"tabBarBarTintColor"
-#define IMVColorTabBarItemTitleNormal @"tabBarItemTitleNormalColor"
-#define IMVColorTabBarItemTitleSelected @"tabBarItemTitleSelectedColor"
-#define IMVColorViewBackground @"viewBackgroundColor"
-#define IMVColorViewContent @"viewContentColor"
-#define IMVColorTextTitle @"textTitleColor"
-#define IMVColorTextDetail @"textDetailColor"
-
-//必须的图片图片，可选
-#define IMVImageTabBarBackground @"tabBarBackgroundImage"
-#define IMVImageNaviBarBackground @"naviBarBackgroundImage"
-#define IMVImageNetworkBrokenHint @"networkBrokenHintImage"
-#define IMVImageEmptyHint @"emptyHintImage"
 
 #define IMVNotificationThemeChanged @"IMVNotificationThemeChanged"
 

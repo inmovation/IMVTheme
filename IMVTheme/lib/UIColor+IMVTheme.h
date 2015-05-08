@@ -22,20 +22,4 @@
  */
 + (UIColor *)colorForName:(NSString *)name;
 
-+ (UIColor *)colorForNaviBarTint;
-+ (UIColor *)colorForNaviBarBarTint;
-+ (UIColor *)colorForNaviBarTitle;
-+ (UIColor *)colorForNaviBarItemTitle;
-
-+ (UIColor *)colorForTabBarTint;
-+ (UIColor *)colorForTabBarBarTint;
-+ (UIColor *)colorForTabBarItemTitleNormal;
-+ (UIColor *)colorForTabBarItemTitleSelected;
-
-+ (UIColor *)colorForViewContent;
-+ (UIColor *)colorForViewBackgroud;
-
-+ (UIColor *)colorForTextDetail;
-+ (UIColor *)colorForTextTitle;
-
 @end

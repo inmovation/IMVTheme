@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "IMVTheme"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "theme of the project."
 
   s.description  = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :ios, "5.0"
 
-  s.source       = { :git => "https://github.com/inmovation/IMVTheme.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/inmovation/IMVTheme.git", :tag => "0.0.2" }
 
   s.source_files  = "IMVTheme/lib/*.{h,m}"
   #  s.exclude_files = "Classes/Exclude"

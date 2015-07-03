@@ -16,6 +16,8 @@
  */
 @interface IMVThemeManager : NSObject
 
+@property (assign, nonatomic) CGFloat fontOffset;
+
 + (instancetype)sharedInstence;
 
 /**
@@ -25,7 +27,7 @@
  *  @param themeType 主题类型，bundle：直接添加到项目中的主题，比如默认主题
                              sandbox：下载到沙盒中的主题
  */
-- (void)useTheme:(NSString *)themeName type:(IMVThemeType)themeType;
+- (void)useTheme:(IMVTheme *)theme;
 
 /**
  *  随主题更换的图片全都放在主题中，直接将图片放在bundle中

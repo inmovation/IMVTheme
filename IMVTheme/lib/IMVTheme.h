@@ -9,22 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "IMVStyle.h"
 
-typedef enum{
-    themeTypeBundle = 0,
-    themeTypeSandbox
-}IMVThemeType;
-
 @interface IMVTheme : NSObject
 
-@property (strong, nonatomic) NSString *name;
-@property (assign, nonatomic) IMVThemeType type;
+@property (strong, nonatomic) NSBundle *bundle;
+@property (strong, nonatomic) NSString *path;
 
 @property (strong, nonatomic) NSMutableDictionary *styles;
 
-+ (instancetype)themeWithName:(NSString *)name type:(IMVThemeType)themeType;
++ (IMVTheme *)themeWithBundleName:(NSString *)bundleName;
++ (IMVTheme *)themeWithPath:(NSString *)path;
 
 - (NSDictionary *)dictionary;
-
 - (BOOL)synchronize;
 
 - (UIFont *)fontForName:(NSString *)name;

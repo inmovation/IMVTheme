@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "IMVTheme"
-  s.version      = "0.0.2"
+  s.version      = "1.0.0"
   s.summary      = "theme of the project."
 
   s.description  = <<-DESC
@@ -16,10 +16,10 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :ios, "5.0"
 
-  s.source       = { :git => "https://github.com/inmovation/IMVTheme.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/inmovation/IMVTheme.git", :tag => "1.0.0" }
 
   s.source_files  = "IMVTheme/lib/*.{h,m}"
-  #  s.exclude_files = "Classes/Exclude"
+  # s.exclude_files = "Classes/Exclude"
   # s.public_header_files = "Classes/**/*.h"
 
   # s.resource  = "icon.png"
@@ -37,6 +37,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "IMVLog"
 
 end

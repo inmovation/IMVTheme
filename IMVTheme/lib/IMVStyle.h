@@ -1,6 +1,6 @@
 //
 //  IMVStyle.h
-//  IMVCommon
+//  IMVTheme
 //
 //  Created by 陈少华 on 15/4/10.
 //  Copyright (c) 2015年 inmovation. All rights reserved.
@@ -16,6 +16,7 @@ typedef enum{
 
 @interface IMVStyle : NSObject
 
+@property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *value;
 @property (assign, nonatomic) IMVThemeStyleType type;
 

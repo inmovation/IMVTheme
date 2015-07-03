@@ -9,12 +9,16 @@
 #import "IMVThemeManager.h"
 #import "IMVTheme.h"
 
+#define IMVThemeUserDefaultFontOffset @"IMVThemeUserDefaultFontOffset"
+
 @interface IMVThemeManager ()
 
 @property (strong, nonatomic) IMVTheme *theme;
 
 @end
+
 @implementation IMVThemeManager
+@synthesize fontOffset = _fontOffset;
 
 + (instancetype)sharedInstence
 {
@@ -30,22 +34,32 @@
 {
     self = [super init];
     if (self) {
-        
+        _fontOffset = CGFLOAT_MAX;
     }
     return self;
 }
 
-- (void)useTheme:(NSString *)themeName type:(IMVThemeType)themeType
+- (CGFloat)fontOffset
 {
-    if (!themeName || themeName.length<=0) {
-        NSLog(@"error: you can't use theme with name:nil");
-        return;
+    if (_fontOffset>1000000.0) {
+        _fontOffset = [[NSUserDefaults standardUserDefaults] floatForKey:IMVThemeUserDefaultFontOffset];
     }
-    if ([self.theme.name isEqualToString:themeName]) {
-        return;
+    return _fontOffset;
+}
+
+- (void)setFontOffset:(CGFloat)fontOffset
+{
+    if (_fontOffset != fontOffset) {
+        _fontOffset = fontOffset;
+        [[NSUserDefaults standardUserDefaults] setFloat:_fontOffset forKey:IMVThemeUserDefaultFontOffset];
     }
-    _theme = [IMVTheme themeWithName:themeName type:themeType];
-    [[NSNotificationCenter defaultCenter] postNotificationName:IMVNotificationThemeChanged object:themeName];
+}
+
+- (void)useTheme:(IMVTheme *)theme
+{
+    _theme = theme;
+    self.fontOffset = 0.0;
+    [[NSNotificationCenter defaultCenter] postNotificationName:IMVNotificationThemeChanged object:theme];
 }
 
 - (UIImage *)imageForName:(NSString *)name

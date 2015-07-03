@@ -44,16 +44,16 @@
 
 - (void)setTheme
 {
-    _imgView.image = [UIImage imageForName:@"default_user"];
+    _imgView.image = [UIImage imageForName:@"/default_user"];
     _label.font = [UIFont fontForName:@"textTitleFont"];
     _label.textColor = [UIColor colorForName:@"textTitleColor"];
 }
 - (IBAction)theme1Clicked:(id)sender {
     
-    [[IMVThemeManager sharedInstence] useTheme:@"ThemeDefault" type:themeTypeBundle];
+    [[IMVThemeManager sharedInstence] useTheme:[IMVTheme themeWithBundleName:@"ThemeDefault"]];
 }
 
 - (IBAction)theme2Clicked:(id)sender {
-    [[IMVThemeManager sharedInstence] useTheme:@"ThemeDefault2" type:themeTypeBundle];
+    [[IMVThemeManager sharedInstence] useTheme:[IMVTheme themeWithBundleName:@"ThemeDefault2"]];
 }
 @end

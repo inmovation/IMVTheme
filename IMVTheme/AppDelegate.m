@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [[IMVThemeManager sharedInstence] useTheme:@"ThemeDefault" type:themeTypeBundle];
+    [[IMVThemeManager sharedInstence] useTheme:[IMVTheme themeWithBundleName:@"ThemeDefault"]];
     return YES;
 }
 

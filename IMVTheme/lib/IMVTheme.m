@@ -121,7 +121,7 @@
     }
     if (_bundle) {
         while (scale>0) {
-            NSString *tempPath = [_bundle pathForResource:[NSString stringWithFormat:@"%@@%lix", name, (long)scale] ofType:@"png"];
+            NSString *tempPath = [_bundle pathForResource:[NSString stringWithFormat:@"%@@%ldx", name, (long)scale] ofType:@"png"];
             if ([[NSFileManager defaultManager] fileExistsAtPath:tempPath]) {
                 imgPath = tempPath;
                 break;
